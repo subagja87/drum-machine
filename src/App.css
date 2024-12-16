@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#drum-machine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 1em;
+  background: #6A9AB0;
+}
+
+#drum-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  width: 50%;
+  gap: 10px;
+}
+
+#display {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  border: 1px solid black;
+  height: 3rem;
+  width: 15rem;
+  background: #3E5879;
+  color: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.drum-pad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: #3E5879;
+  border: 1px solid #3E5879;;
+  color: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.drum-pad:active {
+  background: #FFF574;
+}
